@@ -30,5 +30,12 @@ package Collections;
 	    //replace 2nd element
 	    cameras.set(1, "Konica");
 	    System.out.println(cameras);
+	    
+	    // try any two methods of array lists-
+	    boolean b = cameras.contains("Nikon");
+	    System.out.println(b);
+	    
+	    int index = cameras.indexOf("Sony");
+	    System.out.println(index);
 	  }
 	}

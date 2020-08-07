@@ -10,7 +10,7 @@ public class ThrowThrowsExample {
 			}
 			else {
 				System.out.println("Congrats! Your account was created successfully!");
-			}
+			}			
 		}
 		public static void main(String args[]) {
 				ThrowThrowsExample t1 = new ThrowThrowsExample();
@@ -26,6 +26,7 @@ public class ThrowThrowsExample {
 					catch (ArithmeticException ae) {
 						System.out.println(ae.getMessage());
 					}
+					
 					finally {
 					System.out.println("Do you want to continue? (y/n):");
 					response  = s1.nextLine().charAt(0);

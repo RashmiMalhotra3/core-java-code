@@ -15,12 +15,12 @@ package Collections;
 	    public static void main(String args[]){            
 	        HashSet<String> gadgetStore = new HashSet<String>();
 	        LinkedHashSet<String> gadgetMarket = new LinkedHashSet<String>();
-	        TreeSet<String> gadgetBuzz = new TreeSet<String>();
+	        TreeSet<String> gadgetCart = new TreeSet<String>();
 	     
-	        for(String gadget: Arrays.asList("smartphone", "tablet", "smartwatch")){
+	        for(String gadget: Arrays.asList("smartphone", "tablet", "smartwatch", "smartphone")){
 	            gadgetStore.add(gadget);
 	            gadgetMarket.add(gadget);
-	            gadgetBuzz.add(gadget);
+	            gadgetCart.add(gadget);
 	        }
 	       
 	        //no ordering in HashSet – elements stored in random order
@@ -30,9 +30,9 @@ package Collections;
 	        System.out.println("Order of element in LinkedHashSet :" + gadgetMarket);
 
 	        //should be sorted order – TreeSet stores element in sorted order
-	        System.out.println("Order of objects in TreeSet :" + gadgetBuzz);
+	        System.out.println("Order of objects in TreeSet :" + gadgetCart);
 	        
-	        System.out.println("gadgetBuzz contains smartwatch: "+gadgetBuzz.contains("smartwatch"));
+	        System.out.println("gadgetCart contains smartwatch: "+gadgetCart.contains("smartwatch"));
 	        System.out.println("gadgetMarket contains Fitbit: " + gadgetMarket.contains("Fitbit"));
 	    }
 	    
